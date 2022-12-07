@@ -1,21 +1,34 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-Widget x() {
+Widget x(String e,String name) {
   return Padding(
     padding: const EdgeInsets.all(10.0),
     child: Container(
       // color: Colors.black,
       decoration: BoxDecoration(
           color: Colors.black,
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(12),
           image: DecorationImage(
               image: NetworkImage(
-                "https://wallpaperaccess.com/full/3027373.jpg",
+                "$e",
               ),
               fit: BoxFit.cover)),
-      height: 120,
-      width: 80,
+      child: Padding(
+        padding: const EdgeInsets.only(bottom: 0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            Container(
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(5),
+                    color: Colors.white),
+                child: Text("  $name  "))
+          ],
+        ),
+      ),
+      height: 100,
+      width: 90,
     ),
   );
 }
