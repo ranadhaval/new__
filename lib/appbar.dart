@@ -34,7 +34,8 @@ Widget list(String s, Color color, String k, String j, String o, FontWeight h,
       ),
       title: Text(
         "$o",
-        style: TextStyle(color: Colors.black, fontSize: 18),
+        style: TextStyle(
+            color: Colors.black, fontSize: 18, fontWeight: FontWeight.bold),
       ),
       leading: CircleAvatar(
         radius: 40,

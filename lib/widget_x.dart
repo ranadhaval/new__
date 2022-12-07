@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-Widget x(String e,String name) {
+Widget x(String e, String name) {
   return Padding(
     padding: const EdgeInsets.all(10.0),
     child: Container(
@@ -23,7 +23,10 @@ Widget x(String e,String name) {
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(5),
                     color: Colors.white),
-                child: Text("  $name  "))
+                child: Text(
+                  "  $name  ",
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ))
           ],
         ),
       ),
